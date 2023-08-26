@@ -7,10 +7,10 @@ function Jobs() {
        <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
        <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
        <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
-       <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
-       <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
-       <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
-        <JobCard job="App Developer" company="MicroSoft" location="Silicon Velly" />
+       <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
+       <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
+       <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
+        <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
     </div>
   )
 }
