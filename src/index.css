@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato&family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,200&family=Ubuntu:wght@300&display=swap');
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+body {
+    color: #2a68ff;
+    background-color: white;
+}
+
+.ponenav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    border-radius: 10px;
+}
+
+.ponenav h3 {
+    color: #2a68ff;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.ponenav h3 span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.ponenav i {
+    font-size: 20px;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+
+}
+
+.p-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    margin: auto;
+    z-index: 5;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    box-shadow: 0 7px 4px 0 rgb(40, 40, 40, 0.3);
+}
+
+.p-ul li {
+    width: 100%;
+    list-style: none;
+    color: #2a68ff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.p-ul li:hover {
+    background-color: #2a68ff;
+    color: white;
+}
+
+.dtnav {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dtnav h3 {
+    font-size: 1.4rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #2a68ff;
+
+}
+
+.dtnav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dtnav li {
+    list-style: none;
+    text-decoration: none;
+    padding: 6px;
+    margin: 4px;
+    color: #2a68ff;
+    opacity: 60%;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.dtnav li:hover {
+    opacity: 100%;
+}
+
+.dtnav button {
+    background-color: #2a68ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dtnav button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 2px solid #2a68ff;
+    color: #2a68ff;
+}
+
+.header {
+    max-width: 1000px;
+    height: 200px;
+    background-color: #f1f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    height: 80px;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.inputdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.inputdiv i {
+    width: 30px;
+    color: #2a68ff;
+}
+
+.inputdiv input {
+    border: none;
+    background-color: white;
+    outline: none;
+    height: 40px;
+}
+
+.inputbox button {
+    background-color: #2a68ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.inputdiv button:hover {
+    background-color: white;
+    border: 2px solid #2a68ff;
+    color: #2a68ff;
+}
+
+.header .values-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header .values-box select {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 4px;
+
+}
+
+.header .values-box button {
+    background-color: none;
+    color: black;
+    opacity: 40%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.jobcard-box {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    gap: 0.8rem;
+
+}
+
+.Card {
+    width: 20%;
+    height: 280px;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    color: black;
+    border-radius: 10px;
+    font-family: Poppins;
+    box-shadow: 0 4px 7px 0 rgb(55, 54, 54, 0.2);
+}
+
+.Card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 7px 0 rgb(55, 54, 54, 0.3);
+
+}
+
+.Card .JobName {
+    justify-content: space-between;
+}
+
+.Card .JobName h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.Card .JobName span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 70%;
+
+}
+
+.Card .line {
+    background-color: rgb(113, 111, 111);
+    opacity: 30%;
+    margin-top: 6px;
+    height: 2px;
+}
+
+.Card .JobDetials button {
+    background-color: #2a68ff;
+    color: white;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 13px;
+    box-sizing: border-box;
+}
+
+.Card button:hover {
+    background-color: white;
+    border: 2px solid #2a68ff;
+    color: #2a68ff;
+}
+
+.Card .JobDetials span {
+    opacity: 60%;
+}
+
+/* Quality Style */
+.qualities {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Poppins;
+    color: #2a68ff;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.qualities .qualities-box {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.qualities-box .quality {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px 0 rgb(55, 54, 54, 0.2);
+}
+
+.qualities-box .quality:hover {
+    box-shadow: 0 4px 7px 0 rgb(55, 54, 54, 0.3);
+    cursor: pointer;
+}
+
+.qualities-box .quality .top {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.qualities-box .quality img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.qualities-box .quality b {
+    font-weight: bolder;
+    text-align: justify;
+
+}
+
+/* Offer Style */
+.offer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f4f8;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Poppins;
+    color: #2a68ff;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.offer h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.offer .black {
+    color: black;
+}
+
+.offer button {
+    background-color: #2a68ff;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.offer button:hover {
+    background-color: white;
+    border: 2px solid #2a68ff;
+    color: #2a68ff;
+}
+
+/* Footer Style */
+.footer {
+    display: grid;
+    max-width: 1000px;
+    background-color: #2a68ff;
+    color: white;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 50px;
+    font-family: Poppins;
+    margin: auto;
+    gap: 2rem;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.footer .footer-about span {
+    font-weight: 400;
+}
+
+.footer .footer-about p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer .footer-list {
+    display: flex;
+    gap: 5.5rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer .footer-list li {
+    opacity: 70%;
+}
+
+.footer .footer-list li:hover {
+    opacity: 100%;
+}
+
+.footer .footer-list b {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.footer .footer-list li {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.footer .footer-contact h3 {
+    margin: 0px;
+    padding: 2px;
+}
+
+.footer .footer-contact p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-contact>div {
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.footer .footer-contact>div>input {
+    width: 60%;
+    background: transparent;
+    color: #2a68ff;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer .footer-contact>div>button {
+    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #2a68ff;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .ponenav {
+        display: block;
+    }
+
+    .dtnav {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+        padding: 5px;
+    }
+
+    .header .inputbox .inputdiv {
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    .header .values-box {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        padding: 1px;
+        justify-content: space-between;
+    }
+
+    .header .values-box .values {
+        width: 15%;
+    }
+
+    .header .values-box .values select {
+        padding: 2px;
+    }
+
+    .jobcard-box {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .Card {
+        margin: auto;
+        width: 230px;
+    }
+
+    .qualities .qualities-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .qualities-box .quality {
+        width: 230px;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header {
+        height: auto;
+        padding: 20px;
+
+    }
+
+    .header .inputbox {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .jobcard-box {
+        max-width: 800px;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .Card {
+        width: 200px;
+    }
+
+    .qualities-box {
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footer-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
