@@ -4,7 +4,7 @@ function DsktopNavbar() {
   return (
    
       <div className='dtnav'>
-        <h3>Jobs.Pk</h3>
+        <h1>Jobs.<span>PK</span></h1>
         <ul className='dt-ul'>
           <li>HOME</li>
           <li>ABOUT</li>

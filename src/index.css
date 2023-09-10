@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities; */
 body {
-    color: #2a68ff;
+    color:  #2a68ff;
     background-color: white;
 }
 
@@ -78,14 +78,18 @@ body {
     align-items: center;
 }
 
-.dtnav h3 {
-    font-size: 1.4rem;
+.dtnav h1 {
+    font-size: 1.8rem;
     font-family: Poppins, sans-serif;
-    font-weight: 700;
-    color: #2a68ff;
+    font-weight: 700; 
+    color:  #2a68ff;
+   
 
 }
-
+.dtnav span{
+     font-size: 1.3rem;
+     font-weight: 400;
+}
 .dtnav ul {
     display: flex;
     justify-content: space-around;
@@ -97,13 +101,12 @@ body {
     padding: 6px;
     margin: 4px;
     color: #2a68ff;
-    opacity: 60%;
+    opacity: 70%;
     font-size: 1rem;
     font-weight: 600;
     font-family: Poppins;
     cursor: pointer;
 }
-
 .dtnav li:hover {
     opacity: 100%;
 }
@@ -577,5 +580,8 @@ body {
     .footer .footer-list {
         display: flex;
         flex-direction: column;
+    }
+    .footer .footer-list li{
+        font-size: 4px;
     }
 }
