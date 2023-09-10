@@ -16,8 +16,8 @@ export default function PoneNabar() {
           :<></>
            
         }
-      <h3>Jobs<span>.Pk</span></h3>
-      <i class="fa-solid fa-bars" onClick={()=>setShowul(!showul)}></i>
+      <h1>Jobs<span>.Pk</span></h1>
+      <i className="fa-solid fa-bars" onClick={()=>setShowul(!showul)}></i>
   
     </div>
   )

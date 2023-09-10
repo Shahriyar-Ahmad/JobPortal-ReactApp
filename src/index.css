@@ -18,23 +18,24 @@ body {
     border-radius: 10px;
 }
 
-.ponenav h3 {
+.ponenav h1 {
     color: #2a68ff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     display: inline-block;
+    margin-left: 20px;
 }
 
-.ponenav h3 span {
-    font-size: 2rem;
-    font-weight: 400;
+.ponenav h1 span {
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 .ponenav i {
     font-size: 20px;
     justify-content: flex-end;
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 30px;
 
 }
@@ -42,26 +43,24 @@ body {
 .p-ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: absolute;
     background-color: white;
+    width: 90%;
     margin: auto;
     z-index: 5;
     width: 100%;
     top: 100px;
-    left: 0;
     box-shadow: 0 7px 4px 0 rgb(40, 40, 40, 0.3);
 }
 
 .p-ul li {
-    width: 100%;
     list-style: none;
     color: #2a68ff;
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 4px;
     justify-content: center;
 }
 
@@ -88,7 +87,7 @@ body {
 }
 .dtnav span{
      font-size: 1.3rem;
-     font-weight: 400;
+     font-weight: 500;
 }
 .dtnav ul {
     display: flex;
@@ -111,26 +110,6 @@ body {
     opacity: 100%;
 }
 
-.dtnav button {
-    background-color: #2a68ff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.dtnav button:hover {
-    cursor: pointer;
-    background-color: aliceblue;
-    border: 2px solid #2a68ff;
-    color: #2a68ff;
-}
-
 .header {
     max-width: 1000px;
     height: 200px;
@@ -141,6 +120,7 @@ body {
     justify-content: space-around;
     margin: auto;
     margin-top: 20px;
+    border-radius: 8px;
 }
 
 .inputbox {
@@ -164,8 +144,9 @@ body {
     margin: 8px;
 }
 
-.inputdiv i {
-    width: 30px;
+ i {
+    width: 20px;
+    cursor: pointer;
     color: #2a68ff;
 }
 
@@ -173,33 +154,38 @@ body {
     border: none;
     background-color: white;
     outline: none;
+    padding: 3px;
+    color: #2a68ff;
     height: 40px;
 }
 
-.inputbox button {
+button {
     background-color: #2a68ff;
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
     box-sizing: border-box;
+    border: 2px solid white;
 }
 
-.inputdiv button:hover {
+button:hover {
     background-color: white;
     border: 2px solid #2a68ff;
     color: #2a68ff;
+    background-color: aliceblue;
 }
 
 .header .values-box {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 20px;
 }
 
 .header .values-box select {
@@ -242,7 +228,7 @@ body {
 
 .Card:hover {
     cursor: pointer;
-    box-shadow: 0 4px 7px 0 rgb(55, 54, 54, 0.3);
+    box-shadow: 0 5px 8px 0 rgb(55, 54, 58, 0.6);
 
 }
 
@@ -267,8 +253,9 @@ body {
 .Card .line {
     background-color: rgb(113, 111, 111);
     opacity: 30%;
-    margin-top: 6px;
+    margin-top: 10px;
     height: 2px;
+    border-radius: 2px;
 }
 
 .Card .JobDetials button {
@@ -295,7 +282,17 @@ body {
 .Card .JobDetials span {
     opacity: 60%;
 }
-
+.companylogo{
+    display: flex;  
+    height: 40px;
+    align-items: center;
+    font-size: 1rem;
+}
+.companylogo .logo{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
 /* Quality Style */
 .qualities {
     display: flex;
@@ -325,13 +322,15 @@ body {
 }
 
 .qualities-box .quality:hover {
-    box-shadow: 0 4px 7px 0 rgb(55, 54, 54, 0.3);
+    box-shadow: 0 4px 8px 0 rgb(55, 54, 54, 0.6);
     cursor: pointer;
 }
 
 .qualities-box .quality .top {
-    align-items: center;
-    justify-content: space-around;
+    height: 60px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    justify-content: center;
 }
 
 .qualities-box .quality img {
@@ -340,11 +339,8 @@ body {
     margin-right: 12px;
 }
 
-.qualities-box .quality b {
-    font-weight: bolder;
-    text-align: justify;
 
-}
+
 
 /* Offer Style */
 .offer {
@@ -406,10 +402,11 @@ body {
 
 .footer .footer-about span {
     font-weight: 400;
+    font-size: .8rem;
 }
 
 .footer .footer-about p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
@@ -449,14 +446,14 @@ body {
 }
 
 .footer .footer-contact>div {
-    width: 95%;
+    width: 200px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 5px;
 }
 
 .footer .footer-contact>div>input {
-    width: 60%;
+    width: 110px;
     background: transparent;
     color: #2a68ff;
     outline: none;
@@ -465,11 +462,11 @@ body {
 }
 
 .footer .footer-contact>div>button {
-    width: 80px;
+    width: 83px;
     padding: 5px;
     cursor: pointer;
     background-color: #2a68ff;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 15px;
     border: none;
     color: white;
@@ -486,29 +483,43 @@ body {
 
     .header {
         height: auto;
-        padding: 5px;
+        padding: 10px;
+        width: 90%;
     }
-
+    .header .inputbox  {
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
     .header .inputbox .inputdiv {
         display: flex;
-        width: 100%;
+        width: 90%;
         margin: auto;
+        padding: 4px;
     }
 
     .header .values-box {
         display: flex;
-        width: 100%;
+        width: 90%;
         margin-top: 10px;
         padding: 1px;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin: auto;
     }
-
+    .header .values-box button {
+        font-size: 10px;
+        width: 60px;
+    }
     .header .values-box .values {
-        width: 15%;
+        width: 25%;
     }
-
+    .header .values-box label {
+        font-size: 10px;
+    }
     .header .values-box .values select {
-        padding: 2px;
+        padding: 5px;
+        width: 70px;
+        font-size: 10px;
     }
 
     .jobcard-box {
@@ -522,7 +533,6 @@ body {
         margin: auto;
         width: 230px;
     }
-
     .qualities .qualities-box {
         display: flex;
         flex-direction: column;
@@ -563,7 +573,7 @@ body {
         justify-content: space-evenly;
         margin-top: 20px;
     }
-
+ 
     .Card {
         width: 200px;
     }
@@ -582,6 +592,6 @@ body {
         flex-direction: column;
     }
     .footer .footer-list li{
-        font-size: 4px;
+        font-size: 0.7rem;
     }
 }

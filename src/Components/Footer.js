@@ -5,7 +5,7 @@ function Footer() {
     <div className='footer'>
       <div className='footer-about'>
         <h3>Jobs <span>.Pk</span></h3>
-        <p>Wellcom to our site . Find your dream job here...</p>
+        <p>Welcome to our site . Find your dream job here...</p>
       </div>
       <div className='footer-list'>
         <div className='box1'>
@@ -34,7 +34,8 @@ function Footer() {
         <h3>Contact Us</h3>
         <p>Send Your Quries...</p>
         <div>
-          <input type='text' placeholder='Find Best Jobs.' /> <button>Subscribe</button>
+          <input type='text' placeholder='Find Best Jobs.' /> 
+          <button>Subscribe</button>
         </div>
       </div>
     </div>
