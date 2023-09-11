@@ -1,13 +1,42 @@
+/* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato&family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,200&family=Ubuntu:wght@300&display=swap');
 
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
 body {
-    color:  #2a68ff;
+    color: #2a68ff;
     background-color: white;
 }
 
+i {
+    width: 20px;
+    cursor: pointer;
+    color: #2a68ff;
+}
+
+button {
+    background-color: #2a68ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+button:hover {
+    background-color: white;
+    border: 2px solid #2a68ff;
+    color: #2a68ff;
+    background-color: aliceblue;
+}
+
+/* Phone Navbar Style */
 .ponenav {
     display: flex;
     margin: auto;
@@ -70,6 +99,7 @@ body {
     color: white;
 }
 
+/* Destop Navbar Style */
 .dtnav {
     margin: auto;
     max-width: 1000px;
@@ -81,15 +111,17 @@ body {
 .dtnav h1 {
     font-size: 1.8rem;
     font-family: Poppins, sans-serif;
-    font-weight: 700; 
-    color:  #2a68ff;
-   
+    font-weight: 700;
+    color: #2a68ff;
+
 
 }
-.dtnav span{
-     font-size: 1.3rem;
-     font-weight: 500;
+
+.dtnav span {
+    font-size: 1.3rem;
+    font-weight: 500;
 }
+
 .dtnav ul {
     display: flex;
     justify-content: space-around;
@@ -107,9 +139,12 @@ body {
     font-family: Poppins;
     cursor: pointer;
 }
+
 .dtnav li:hover {
     opacity: 100%;
 }
+
+/* header Style */
 
 .header {
     max-width: 1000px;
@@ -145,11 +180,6 @@ body {
     margin: 8px;
 }
 
- i {
-    width: 20px;
-    cursor: pointer;
-    color: #2a68ff;
-}
 
 .inputdiv input {
     border: none;
@@ -158,28 +188,6 @@ body {
     padding: 3px;
     color: #2a68ff;
     height: 40px;
-}
-
-button {
-    background-color: #2a68ff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    cursor: pointer;
-    box-sizing: border-box;
-    border: 2px solid white;
-}
-
-button:hover {
-    background-color: white;
-    border: 2px solid #2a68ff;
-    color: #2a68ff;
-    background-color: aliceblue;
 }
 
 .header .values-box {
@@ -205,6 +213,7 @@ button:hover {
     cursor: pointer;
 }
 
+/* card Style */
 .jobcard-box {
     display: flex;
     max-width: 1000px;
@@ -283,17 +292,20 @@ button:hover {
 .Card .JobDetials span {
     opacity: 60%;
 }
-.companylogo{
-    display: flex;  
+
+.companylogo {
+    display: flex;
     height: 40px;
     align-items: center;
     font-size: 1rem;
 }
-.companylogo .logo{
+
+.companylogo .logo {
     display: inline-block;
     width: 25px;
     height: 25px;
 }
+
 /* Quality Style */
 .qualities {
     display: flex;
@@ -340,9 +352,6 @@ button:hover {
     margin-right: 12px;
 }
 
-
-
-
 /* Offer Style */
 .offer {
     display: flex;
@@ -367,17 +376,14 @@ button:hover {
 
 .offer .black {
     color: black;
+    font-size: 2rem;
 }
 
 .offer button {
-    background-color: #2a68ff;
-    color: white;
     padding: 20px 40px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    cursor: pointer;
-    box-sizing: border-box;
     font-weight: 700;
 }
 
@@ -474,10 +480,12 @@ button:hover {
     color: white;
 }
 
+/* BreakPoint  For Small screen (Mobile) */
+
 @media (max-width: 767px) {
     .ponenav {
         display: block;
-        position: stickyc;
+        position: sticky;
         top: 0;
         background-color: white;
         z-index: 10;
@@ -492,11 +500,13 @@ button:hover {
         padding: 10px;
         width: 90%;
     }
-    .header .inputbox  {
+
+    .header .inputbox {
         display: flex;
         width: 90%;
         margin: auto;
     }
+
     .header .inputbox .inputdiv {
         display: flex;
         width: 90%;
@@ -512,16 +522,20 @@ button:hover {
         justify-content: space-evenly;
         margin: auto;
     }
+
     .header .values-box button {
         font-size: 10px;
         width: 60px;
     }
+
     .header .values-box .values {
         width: 25%;
     }
+
     .header .values-box label {
         font-size: 10px;
     }
+
     .header .values-box .values select {
         padding: 5px;
         width: 80px;
@@ -539,6 +553,7 @@ button:hover {
         margin: auto;
         width: 230px;
     }
+
     .qualities .qualities-box {
         display: flex;
         flex-direction: column;
@@ -556,6 +571,7 @@ button:hover {
 
 }
 
+/* Style for Tablet */
 @media (max-width: 1000px) {
     .header {
         height: auto;
@@ -579,13 +595,15 @@ button:hover {
         justify-content: space-evenly;
         margin-top: 20px;
     }
- 
+
     .Card {
         width: 200px;
     }
+
     .offer h1 {
         line-height: 3rem;
     }
+
     .qualities-box {
         justify-content: space-evenly;
     }
@@ -599,7 +617,8 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
-    .footer .footer-list li{
+
+    .footer .footer-list li {
         font-size: 0.7rem;
     }
 }
