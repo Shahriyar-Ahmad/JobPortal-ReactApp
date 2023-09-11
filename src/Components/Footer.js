@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='footer'>
+    <footer className='footer'>
       <div className='footer-about'>
         <h3>Jobs <span>.Pk</span></h3>
         <p>Welcome to our site . Find your dream job here...</p>
@@ -38,8 +38,8 @@ function Footer() {
           <button>Subscribe</button>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 
-export default Footer
+export default Footer;

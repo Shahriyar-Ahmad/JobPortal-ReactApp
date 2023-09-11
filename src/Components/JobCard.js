@@ -8,7 +8,7 @@ function JobCard(props) {
     <div className='Card'>
       <div className='JobName'>
         <h1>{props.job}</h1>
-        <i class="fa-regular fa-clock"></i>
+        <i className="fa-regular fa-clock"></i>
         <span>Now</span>
       </div>
       <div className='JobDetials'>

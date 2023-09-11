@@ -1,8 +1,14 @@
+// React import
 import React, { useRef } from 'react'
+
+// Components
 import DsktopNavbar from './DsktopNavbar'
 // import InputCom from './InputCom'
+// correctly not show in this header section
 import Values from './Values'
 import PoneNabar from './PoneNabar'
+
+
 function Header() {
     const clearallRef = useRef();
     const input1Ref = useRef();
@@ -25,7 +31,7 @@ function Header() {
         <div>
             <DsktopNavbar />
             <PoneNabar />
-            <div className='header'>
+            <header className='header'>
                 <form ref={clearallRef} >
                     <div className='inputbox'>
                         <div className='inputdiv'>
@@ -34,7 +40,7 @@ function Header() {
                             <i className="fa-regular fa-circle-xmark" onClick={clearinput1Data}></i>
                         </div>
                         <div className='inputdiv'>
-                            <i class="fa-solid fa-house"></i>
+                            <i className="fa-solid fa-house"></i>
                             <input ref={input2Ref} type='text' placeholder='Search Job Company' />
                             <i className="fa-regular fa-circle-xmark" onClick={clearinput2Data}></i>
                         </div>
@@ -47,14 +53,13 @@ function Header() {
                     </div>
 
                     <div className='values-box'>
-
                         <Values value='Type:' value1='Contract' value2='Part-time' value3='Full-Time' />
                         <Values value='Level:' value1='Enter' value2='Intermdiate' value3='Senior' />
                         <Values value='Sort By:' value1='Relevence' value2='Intermdiate' value3='Relevence' />
                         <button onClick={clearallData} >Clear All</button>
                     </div>
                 </form>
-            </div>
+            </header>
         </div>
     )
 }
