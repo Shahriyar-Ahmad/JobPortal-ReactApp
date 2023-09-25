@@ -10,7 +10,7 @@ function Jobs() {
        <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
        <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
        <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
-        <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
+       <JobCard job="Web Developer" company="MicroSoft" location="Silicon Velly" />
     </div>
   )
 }
